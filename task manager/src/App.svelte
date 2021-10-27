@@ -1,9 +1,19 @@
 <script lang="ts">
-import { text } from "svelte/internal";
+  import Header from "./lib/Header.svelte";
 
-  let nome: string = "";
+  let n1 = 0;
+  let n2 = 0;
+  let resultado = 0;
+
+  function somar() {
+    resultado = n1 + n2; 
+  }
 </script>
 
-<input type="text" value={nome} />
-<p>Seja bem vindo, {nome}!</p>
+<Header />
+
+<input type="number" on:keyup={somar} bind:value={n1} />
+<span>+</span>
+<input type="number" on:keyup={somar} bind:value={n2} />
+<span> = {resultado}</span>
 
