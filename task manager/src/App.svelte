@@ -1,19 +1,11 @@
 <script lang="ts">
-  import Header from "./lib/Header.svelte";
-
-  let n1 = 0;
-  let n2 = 0;
-  let resultado = 0;
-
-  function somar() {
-    resultado = n1 + n2; 
-  }
+    import { Router, Route } from "svelte-navigator";
+    import Header from "./components/Header.svelte";
+    import Home from "./pages/Home.svelte";
 </script>
 
-<Header />
+<Header/>
 
-<input type="number" on:keyup={somar} bind:value={n1} />
-<span>+</span>
-<input type="number" on:keyup={somar} bind:value={n2} />
-<span> = {resultado}</span>
-
+<Router>
+    <Route to='/' component={Home} />
+</Router>

@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: "title";
+    src: url(./fonts/SourceSansPro-ExtraLightItalic.ttf);
+}
+
+@font-face {
+    font-family: "standard";
+    src: url(./fonts/SourceSansPro-Bold.ttf);
+}
