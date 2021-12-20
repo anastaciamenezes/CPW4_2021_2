@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: "title";
+    src: url(./fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "standard";
+    src: url(./fonts/Poppins-SemiBold.ttf);
+}
